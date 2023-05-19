@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donor Form</title>
+  <link rel="stylesheet" href="donor.css">
+</head>
+<body>
+  <header>
+    <h1>RedCross Connect</h1>
+  </header>
+  <main>
+    <div class="form-container">
+      <h2>Donor Form</h2>
+      <form method="POST" action="http://localhost:3000/blood_donation">
+
+        <ul>
+          <li>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required>
+          </li>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </li>
+          <li>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </li>
+          <li>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+          </li>
+          <li>
+            <label for="blood_type_id">Blood Type ID:</label>
+            <input type="text" id="blood_type_id" name="blood_type_id" required>
+          </li>
+        </ul>
+        <div class="form-actions">
+          <button type="button" onclick="goBack()">Back</button>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </main>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
